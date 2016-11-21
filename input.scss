@@ -1,20 +1,9 @@
+$main-font: "Helvetica Neue",Helvetica,Arial,sans-serif;
+$main-text-color: #ffffff;
 
 html {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: $main-font;
+	color: $main-text-color;
 }
 
-menu {
-	.navBlock {
-		display: inline-block;
-		width: 150px;
-		vertical-align: middle;
-		line-height: 3em;
-		height: 3em;
-	}
-
-	.navRight {
-		display: inline-block;
-		float: right;
-		text-align: center;
-	}
-}
+@import "header";

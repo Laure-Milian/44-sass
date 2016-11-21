@@ -1,15 +1,36 @@
 html {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff; }
 
-menu .navBlock {
-  display: inline-block;
-  width: 150px;
-  vertical-align: middle;
-  line-height: 3em;
-  height: 3em; }
-menu .navRight {
-  display: inline-block;
-  float: right;
-  text-align: center; }
+header {
+  background-image: url("http://placehold.it/1200x900");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%; }
+  header .menu .navLeft {
+    display: inline-block; }
+    header .menu .navLeft .logoHeader {
+      height: 50px;
+      width: 80px; }
+  header .menu .navRight {
+    display: inline-block;
+    float: right;
+    text-align: center; }
+    header .menu .navRight .navBlock {
+      display: inline-block;
+      width: 150px;
+      line-height: 3em;
+      height: 3em; }
+  header .textHeader {
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 150px; }
+    header .textHeader .btnHeader {
+      color: #ffffff;
+      background: transparent;
+      height: 50px;
+      width: 250px;
+      border: 1px solid #ffffff; }
 
 /*# sourceMappingURL=output.css.map */
