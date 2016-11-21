@@ -1,7 +1,45 @@
 .searchBar {
+	margin-top: 25px;
+
 	.searchBlock {
 		border: 1px solid grey;
 		display: inline-block;
 		width: 350px;
+		height: 60px;
+		padding: 15px 5px;
+
+		input {
+			height: 40px;
+			background: transparent;
+			border: none;
+		}
+
+		.inputDate {
+			width: 150px;
+
+		}
+		
+		.searchBlockDivider {
+			display: inline-block;
+			width: 170px;
+			margin: 0px;
+
+			select {
+				height: 40px;
+				width: 100%;
+				background: transparent;
+				border: none;
+			}
+
+			.btnSearch {
+				@include border-radius(5px);
+				color: $white;
+				background-color: $pink;
+				height: 50px;
+				border: none;
+				width: 100%
+			}
+		}
+
 	}
 }

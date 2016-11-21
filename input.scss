@@ -1,8 +1,16 @@
+// Variables
 $main-font: "Helvetica Neue",Helvetica,Arial,sans-serif;
-$main-text-color: black;
-$header-text-color: white;
+$main-text-color: grey;
+$white: #ffffff;
+$pink: #FF9686;
+
+// Mixins
+@mixin border-radius($radius) {
+	border-radius: $radius;
+}
 
 
+// Architecture css
 html {
 	font-family: $main-font;
 	color: $main-text-color;
@@ -11,8 +19,18 @@ html {
 @import "header";
 
 .container {
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 }
 
 @import "searchBar";
+
+@import "menu4";
+
+@import "menu3";
+
+
+
+
+
+

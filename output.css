@@ -1,6 +1,6 @@
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: black; }
+  color: grey; }
 
 header {
   background-image: url("http://placehold.it/1200x900");
@@ -8,12 +8,14 @@ header {
   background-repeat: no-repeat;
   height: 500px;
   width: 100%;
-  color: white; }
+  color: #ffffff; }
   header .menu .navLeft {
     display: inline-block; }
     header .menu .navLeft .logoHeader {
       height: 50px;
       width: 80px; }
+    header .menu .navLeft:hover {
+      cursor: pointer; }
   header .menu .navRight {
     display: inline-block;
     float: right;
@@ -23,26 +25,71 @@ header {
       width: 150px;
       line-height: 3em;
       height: 3em; }
-  header .menu .navLeft, header .menu .navRight :hover {
-    cursor: pointer; }
+    header .menu .navRight:hover {
+      cursor: pointer; }
   header .textHeader {
     width: 500px;
     margin-top: 100px;
     margin-left: 150px; }
     header .textHeader .btnHeader {
+      border-radius: 20px;
       background: transparent;
-      height: 50px;
-      width: 250px;
-      color: white;
-      border: 1px solid white; }
+      height: 40px;
+      width: 200px;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      font-size: 15px; }
+      header .textHeader .btnHeader:hover {
+        background-color: #FF9686;
+        cursor: pointer; }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto; }
 
-.searchBar .searchBlock {
-  border: 1px solid grey;
+.searchBar {
+  margin-top: 25px; }
+  .searchBar .searchBlock {
+    border: 1px solid grey;
+    display: inline-block;
+    width: 350px;
+    height: 60px;
+    padding: 15px 5px; }
+    .searchBar .searchBlock input {
+      height: 40px;
+      background: transparent;
+      border: none; }
+    .searchBar .searchBlock .inputDate {
+      width: 150px; }
+    .searchBar .searchBlock .searchBlockDivider {
+      display: inline-block;
+      width: 170px;
+      margin: 0px; }
+      .searchBar .searchBlock .searchBlockDivider select {
+        height: 40px;
+        width: 100%;
+        background: transparent;
+        border: none; }
+      .searchBar .searchBlock .searchBlockDivider .btnSearch {
+        border-radius: 5px;
+        color: #ffffff;
+        background-color: #FF9686;
+        height: 50px;
+        border: none;
+        width: 100%; }
+
+.menu4 .blockMenu4 {
   display: inline-block;
-  width: 350px; }
+  width: 250px;
+  margin: 0px 10px; }
+  .menu4 .blockMenu4 span {
+    font-size: 15px; }
+
+.menu3 .blockMenu3 {
+  display: inline-block;
+  width: 350px;
+  margin: 0px 10px; }
+  .menu3 .blockMenu3 span {
+    font-size: 15px; }
 
 /*# sourceMappingURL=output.css.map */

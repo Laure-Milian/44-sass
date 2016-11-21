@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>AirBnb wannabe</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="output.css">
 </head>
 <body>
@@ -30,11 +31,74 @@
 	<div class="container">
 
 		<div class="searchBar">
-			<div class="searchBlock">tryrtyt</div>
-			<div class="searchBlock">rytrt</div>
-			<div class="searchBlock">ryetytry</div>
+			<form>
+				<div class="searchBlock">
+					<label for="inputWhere">Où</label>
+					<div>
+						<input id="inputWhere" type="text" placeholder="Destination, ville, adresse">
+					</div>
+				</div>
+				<div class="searchBlock">
+					<label for="inputWhen">Quand</label>
+					<div>
+						<input id="inputWhen" class="inputDate" type="text" placeholder="Arrivée">-><input class="inputDate" type="text" placeholder="Départ">
+					</div>
+				</div>
+				<div class="searchBlock">
+					<div class="searchBlockDivider">
+						<label for="inputTravellers">Voyageurs</label>
+						<div>
+							<select id="inputTravellers">
+								<option value="1">1 voyageur</option>
+								<option value="2">2 voyageurs</option>
+								<option value="3">3 voyageurs</option>
+							</select>
+						</div>
+					</div>
+					<div class="searchBlockDivider">
+						<button class="btnSearch">Rechercher</button>
+					</div>
+				</div>
+			</form>
 		</div>
-		
+
+		<div class="menu4">
+			<h2>Expériences</h2>
+			<div class="blockMenu4">
+				<img src="http://placehold.it/260x350">
+				<span><strong>165€</strong> Meditation & flowers · 3 jours</span>
+			</div>
+			<div class="blockMenu4">
+				<img src="http://placehold.it/260x350">
+				<span><strong>117€</strong> Crafting & design · 3 jours</span>
+			</div>
+			<div class="blockMenu4">
+				<img src="http://placehold.it/260x350">
+				<span><strong>298€</strong> Asian food & culinary · 3 jours</span>
+			</div>
+			<div class="blockMenu4">
+				<img src="http://placehold.it/260x350">
+				<span><strong>298€</strong> Asian food & culinary · 3 jours</span>
+			</div>
+		</div>
+
+		<div class="menu3">
+			<h2>Logements</h2>
+			<div class="blockMenu3">
+				<img src="http://placehold.it/350x250">
+				<span><strong>165€</strong> Meditation & flowers · 3 jours</span>
+				<div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+			</div>
+			<div class="blockMenu3">
+				<img src="http://placehold.it/350x250">
+				<span><strong>117€</strong> Crafting & design · 3 jours</span>
+			</div>
+			<div class="blockMenu3">
+				<img src="http://placehold.it/350x250">
+				<span><strong>298€</strong> Asian food & culinary · 3 jours</span>
+			</div>
+		</div>
+
 	</div>
 
 </body>
