@@ -1,5 +1,7 @@
 $main-font: "Helvetica Neue",Helvetica,Arial,sans-serif;
-$main-text-color: #ffffff;
+$main-text-color: black;
+$header-text-color: white;
+
 
 html {
 	font-family: $main-font;
@@ -7,3 +9,10 @@ html {
 }
 
 @import "header";
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+@import "searchBar";

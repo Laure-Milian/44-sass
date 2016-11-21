@@ -1,13 +1,14 @@
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #ffffff; }
+  color: black; }
 
 header {
   background-image: url("http://placehold.it/1200x900");
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
-  width: 100%; }
+  width: 100%;
+  color: white; }
   header .menu .navLeft {
     display: inline-block; }
     header .menu .navLeft .logoHeader {
@@ -22,15 +23,26 @@ header {
       width: 150px;
       line-height: 3em;
       height: 3em; }
+  header .menu .navLeft, header .menu .navRight :hover {
+    cursor: pointer; }
   header .textHeader {
     width: 500px;
     margin-top: 100px;
     margin-left: 150px; }
     header .textHeader .btnHeader {
-      color: #ffffff;
       background: transparent;
       height: 50px;
       width: 250px;
-      border: 1px solid #ffffff; }
+      color: white;
+      border: 1px solid white; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+.searchBar .searchBlock {
+  border: 1px solid grey;
+  display: inline-block;
+  width: 350px; }
 
 /*# sourceMappingURL=output.css.map */
