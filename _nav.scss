@@ -1,0 +1,38 @@
+.nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	color: $grey;
+	background-color: $white;
+	opacity: 0.9;	
+
+	.navLeft {
+		display: inline-block;
+
+		.logoHeader {
+			height: 50px;
+			width: 80px;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.navRight {
+		display: inline-block;
+		float: right;
+		text-align: center; 
+
+		.navBlock {
+			display: inline-block;
+			width: 150px;
+			line-height: 3em;
+			height: 3em; 
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

@@ -8,28 +8,10 @@ header {
   background-repeat: no-repeat;
   height: 500px;
   width: 100%;
-  color: #ffffff; }
-  header .menu .navLeft {
-    display: inline-block; }
-    header .menu .navLeft .logoHeader {
-      height: 50px;
-      width: 80px; }
-    header .menu .navLeft:hover {
-      cursor: pointer; }
-  header .menu .navRight {
-    display: inline-block;
-    float: right;
-    text-align: center; }
-    header .menu .navRight .navBlock {
-      display: inline-block;
-      width: 150px;
-      line-height: 3em;
-      height: 3em; }
-    header .menu .navRight:hover {
-      cursor: pointer; }
+  padding-top: 200px; }
   header .textHeader {
+    color: #ffffff;
     width: 500px;
-    margin-top: 100px;
     margin-left: 150px; }
     header .textHeader .btnHeader {
       border-radius: 20px;
@@ -47,6 +29,32 @@ header {
   width: 85%;
   margin: 0 auto; }
 
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  color: #484848;
+  background-color: #ffffff;
+  opacity: 0.9; }
+  .nav .navLeft {
+    display: inline-block; }
+    .nav .navLeft .logoHeader {
+      height: 50px;
+      width: 80px; }
+    .nav .navLeft:hover {
+      cursor: pointer; }
+  .nav .navRight {
+    display: inline-block;
+    float: right;
+    text-align: center; }
+    .nav .navRight .navBlock {
+      display: inline-block;
+      width: 150px;
+      line-height: 3em;
+      height: 3em; }
+    .nav .navRight:hover {
+      cursor: pointer; }
+
 .searchBar {
   margin-top: 25px; }
   .searchBar .searchBlock {
@@ -58,7 +66,11 @@ header {
     .searchBar .searchBlock input {
       height: 40px;
       background: transparent;
-      border: none; }
+      border: none;
+      font-size: 18px; }
+      .searchBar .searchBlock input:focus {
+        outline: none;
+        border-bottom: 1px solid #FF9686; }
     .searchBar .searchBlock .inputDate {
       width: 150px; }
     .searchBar .searchBlock .searchBlockDivider {
@@ -69,14 +81,18 @@ header {
         height: 40px;
         width: 100%;
         background: transparent;
-        border: none; }
+        border: none;
+        font-size: 18px; }
       .searchBar .searchBlock .searchBlockDivider .btnSearch {
         border-radius: 5px;
         color: #ffffff;
         background-color: #FF9686;
         height: 50px;
         border: none;
-        width: 100%; }
+        width: 100%;
+        font-size: 18px; }
+        .searchBar .searchBlock .searchBlockDivider .btnSearch:hover {
+          background-color: #ffc2b9; }
 
 .menu4 .blockMenu4 {
   display: inline-block;
@@ -90,6 +106,13 @@ header {
   width: 350px;
   margin: 0px 10px; }
   .menu3 .blockMenu3 span {
+    font-size: 15px; }
+
+.menu6 .blockMenu6 {
+  display: inline-block;
+  width: 160px;
+  margin: 0px 10px; }
+  .menu6 .blockMenu6 span {
     font-size: 15px; }
 
 /*# sourceMappingURL=output.css.map */

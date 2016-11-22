@@ -3,6 +3,7 @@ $main-font: "Helvetica Neue",Helvetica,Arial,sans-serif;
 $main-text-color: grey;
 $white: #ffffff;
 $pink: #FF9686;
+$grey: #484848;
 
 // Mixins
 @mixin border-radius($radius) {
@@ -23,14 +24,15 @@ html {
 	margin: 0 auto;
 }
 
+@import "nav";
+
 @import "searchBar";
 
 @import "menu4";
 
 @import "menu3";
 
-
-
+@import "menu6";
 
 
 
