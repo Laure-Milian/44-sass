@@ -2,8 +2,12 @@ html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: grey; }
 
+.container {
+  width: 85%;
+  margin: 0 auto; }
+
 header {
-  background-image: url("http://placehold.it/1200x900");
+  background-image: url("http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
@@ -24,10 +28,6 @@ header {
       header .textHeader .btnHeader:hover {
         background-color: #FF9686;
         cursor: pointer; }
-
-.container {
-  width: 85%;
-  margin: 0 auto; }
 
 .nav {
   width: 100%;
@@ -58,7 +58,7 @@ header {
 .searchBar {
   margin-top: 25px; }
   .searchBar .searchBlock {
-    border: 1px solid grey;
+    border: 1px solid #484848;
     display: inline-block;
     width: 350px;
     height: 60px;
@@ -73,26 +73,27 @@ header {
         border-bottom: 1px solid #FF9686; }
     .searchBar .searchBlock .inputDate {
       width: 150px; }
-    .searchBar .searchBlock .searchBlockDivider {
-      display: inline-block;
-      width: 170px;
-      margin: 0px; }
-      .searchBar .searchBlock .searchBlockDivider select {
-        height: 40px;
-        width: 100%;
-        background: transparent;
-        border: none;
-        font-size: 18px; }
-      .searchBar .searchBlock .searchBlockDivider .btnSearch {
-        border-radius: 5px;
-        color: #ffffff;
-        background-color: #FF9686;
-        height: 50px;
-        border: none;
-        width: 100%;
-        font-size: 18px; }
-        .searchBar .searchBlock .searchBlockDivider .btnSearch:hover {
-          background-color: #ffc2b9; }
+
+.searchBlockDivider {
+  display: inline-block;
+  width: 170px;
+  margin: 0px; }
+  .searchBlockDivider select {
+    height: 40px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 18px; }
+  .searchBlockDivider .btnSearch {
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #FF9686;
+    height: 50px;
+    border: none;
+    width: 100%;
+    font-size: 18px; }
+    .searchBlockDivider .btnSearch:hover {
+      background-color: #ffc2b9; }
 
 .menu4 .blockMenu4 {
   display: inline-block;
@@ -114,5 +115,53 @@ header {
   margin: 0px 10px; }
   .menu6 .blockMenu6 span {
     font-size: 15px; }
+
+footer {
+  margin-top: 40px;
+  border-top: 1px solid #484848;
+  padding-top: 40px;
+  font-size: 13px; }
+  footer .quartFooter {
+    display: inline-block;
+    width: 200px;
+    margin: 0px 10px;
+    padding: 10px;
+    vertical-align: top; }
+    footer .quartFooter .selectFooter {
+      height: 40px;
+      width: 150px;
+      background: transparent;
+      font-size: 14px;
+      color: #00A699;
+      margin: 2px;
+      font-weight: bold; }
+    footer .quartFooter h6 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 14px; }
+    footer .quartFooter ul {
+      margin-top: 10px;
+      padding-left: 0; }
+    footer .quartFooter li {
+      list-style: none;
+      padding-left: 0; }
+
+.bottomFooter {
+  border-top: 1px solid #484848; }
+  .bottomFooter div {
+    display: inline-block;
+    margin: 0 15px;
+    line-height: 5em; }
+  .bottomFooter .bottomFooterLeft {
+    display: inline-block;
+    padding-bottom: 30px; }
+  .bottomFooter .bottomFooterRight {
+    display: inline-block;
+    float: right; }
+  .bottomFooter a {
+    text-decoration: none;
+    color: #484848; }
+    .bottomFooter a:hover {
+      color: #00A699; }
 
 /*# sourceMappingURL=output.css.map */

@@ -1,28 +1,10 @@
-// Variables
-$main-font: "Helvetica Neue",Helvetica,Arial,sans-serif;
-$main-text-color: grey;
-$white: #ffffff;
-$pink: #FF9686;
-$grey: #484848;
+@import "variables";
 
-// Mixins
-@mixin border-radius($radius) {
-	border-radius: $radius;
-}
+@import "mixins";
 
-
-// Architecture css
-html {
-	font-family: $main-font;
-	color: $main-text-color;
-}
+@import "global";
 
 @import "header";
-
-.container {
-	width: 85%;
-	margin: 0 auto;
-}
 
 @import "nav";
 
@@ -33,6 +15,9 @@ html {
 @import "menu3";
 
 @import "menu6";
+
+@import "footer";
+
 
 
 
