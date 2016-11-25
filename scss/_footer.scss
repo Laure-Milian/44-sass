@@ -1,0 +1,75 @@
+footer {
+	margin-top: 3em;
+	border-top: 0.1em solid $grey;
+	padding-top: 4em;
+	font-size: 1.3em;
+
+	.quartFooter {
+		display: inline-block;
+		width: 16em;
+		margin: 0 1em;
+		padding: 1em;
+		vertical-align: top;
+
+		.selectFooter {
+			height: 2em;
+			width: 10em;
+			background: transparent;
+			font-size: 1em;
+			color: $teal;
+			margin: 0.2em;
+			font-weight: bold;
+		}
+
+		h6 {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 1em;
+		}
+
+		ul {
+			margin-top: 1em;
+			padding-left: 0;
+		}
+
+		li {
+			list-style: none;
+			padding-left: 0;
+		}
+	}
+
+}
+
+.bottomFooter {
+	border-top: 0.1em solid $grey;
+	margin-top: 3em;
+	padding-top: 1em;
+
+	div {
+		display: inline-block;
+		margin: 0 1.5em;
+		line-height: 5em;
+	}
+
+	.bottomFooterLeft {
+		display: inline-block;
+		padding-bottom: 3em;
+	}
+
+	.bottomFooterRight {
+		display: inline-block;
+		float: right;
+	}
+
+	a {
+		text-decoration: none;
+		color: $grey;
+
+		&:hover {
+			color: $teal;
+		}
+	}
+}
+
+
+

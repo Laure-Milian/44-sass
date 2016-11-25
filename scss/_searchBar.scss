@@ -1,0 +1,57 @@
+.searchBar {
+	margin-top: 2.5em;
+
+	.searchBlock {
+		border: 0.1em solid $grey;
+		display: inline-block;
+		width: 33em;
+		height: 6em;
+		padding: 1.5em 0.5em;
+
+		input {
+			height: 3em;
+			background: transparent;
+			border: none;
+			font-size: 1.4em;
+
+			&:focus {
+				outline: none;
+				border-bottom: 0.1em solid $pink;
+			}
+		}
+
+		.inputDate {
+			width: 10em;
+
+		}
+		
+		.searchBlockDivider {
+			display: inline-block;
+			width: 15em;
+			margin: 0;
+
+			select {
+				height: 3em;
+				width: 100%;
+				background: transparent;
+				border: none;
+				font-size: 1.4em;
+			}
+
+			.btnSearch {
+				@include border-radius(0.5em);
+				color: $white;
+				background-color: $pink;
+				height: 3.5em;
+				border: none;
+				width: 100%;
+				font-size: 1.8em;
+
+				&:hover {
+					background-color: lighten($pink, 10%);
+				}
+			}
+		}
+
+	}
+}

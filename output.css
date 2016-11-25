@@ -1,6 +1,7 @@
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: grey; }
+  color: grey;
+  font-size: 67.5%; }
 
 .container {
   width: 85%;
@@ -10,151 +11,167 @@ header {
   background-image: url("http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 50em;
   width: 100%;
-  padding-top: 200px; }
+  padding-top: 20em; }
   header .textHeader {
     color: #ffffff;
-    width: 500px;
-    margin-left: 150px; }
+    width: 50em;
+    margin-left: 15em; }
+    header .textHeader h1 {
+      font-size: 4em; }
+    header .textHeader h3 {
+      font-size: 1.5em;
+      margin-bottom: 2em; }
     header .textHeader .btnHeader {
-      border-radius: 20px;
+      border-radius: 2em;
       background: transparent;
-      height: 40px;
-      width: 200px;
+      height: 2.5em;
+      width: 15em;
       color: #ffffff;
-      border: 1px solid #ffffff;
-      font-size: 15px; }
+      border: 0.1em solid #ffffff;
+      font-size: 1.5em; }
       header .textHeader .btnHeader:hover {
         background-color: #FF9686;
         cursor: pointer; }
 
-.nav {
+.navDesktop {
   width: 100%;
   position: fixed;
   top: 0;
   color: #484848;
   background-color: #ffffff;
   opacity: 0.9; }
-  .nav .navLeft {
+  .navDesktop .navLeft {
     display: inline-block; }
-    .nav .navLeft .logoHeader {
-      height: 50px;
-      width: 80px; }
-    .nav .navLeft:hover {
+    .navDesktop .navLeft:hover {
       cursor: pointer; }
-  .nav .navRight {
+  .navDesktop .navRight {
     display: inline-block;
     float: right;
     text-align: center; }
-    .nav .navRight .navBlock {
+    .navDesktop .navRight .navBlock {
       display: inline-block;
-      width: 150px;
+      width: 12em;
       line-height: 3em;
-      height: 3em; }
-    .nav .navRight:hover {
+      height: 3em;
+      font-size: 1.5em; }
+    .navDesktop .navRight:hover {
       cursor: pointer; }
+  .navDesktop .logo {
+    margin: 2px; }
 
+.navMobile .navBlock {
+  width: 100%;
+  font-size: 3em; }
+
+@media screen and (max-width: 800px) {
+  .navDesktop {
+    display: none; } }
+@media screen and (min-width: 800px) {
+  .navMobile {
+    display: none; } }
 .searchBar {
-  margin-top: 25px; }
+  margin-top: 2.5em; }
   .searchBar .searchBlock {
-    border: 1px solid #484848;
+    border: 0.1em solid #484848;
     display: inline-block;
-    width: 350px;
-    height: 60px;
-    padding: 15px 5px; }
+    width: 33em;
+    height: 6em;
+    padding: 1.5em 0.5em; }
     .searchBar .searchBlock input {
-      height: 40px;
+      height: 3em;
       background: transparent;
       border: none;
-      font-size: 18px; }
+      font-size: 1.4em; }
       .searchBar .searchBlock input:focus {
         outline: none;
-        border-bottom: 1px solid #FF9686; }
+        border-bottom: 0.1em solid #FF9686; }
     .searchBar .searchBlock .inputDate {
-      width: 150px; }
-
-.searchBlockDivider {
-  display: inline-block;
-  width: 170px;
-  margin: 0px; }
-  .searchBlockDivider select {
-    height: 40px;
-    width: 100%;
-    background: transparent;
-    border: none;
-    font-size: 18px; }
-  .searchBlockDivider .btnSearch {
-    border-radius: 5px;
-    color: #ffffff;
-    background-color: #FF9686;
-    height: 50px;
-    border: none;
-    width: 100%;
-    font-size: 18px; }
-    .searchBlockDivider .btnSearch:hover {
-      background-color: #ffc2b9; }
+      width: 10em; }
+    .searchBar .searchBlock .searchBlockDivider {
+      display: inline-block;
+      width: 15em;
+      margin: 0; }
+      .searchBar .searchBlock .searchBlockDivider select {
+        height: 3em;
+        width: 100%;
+        background: transparent;
+        border: none;
+        font-size: 1.4em; }
+      .searchBar .searchBlock .searchBlockDivider .btnSearch {
+        border-radius: 0.5em;
+        color: #ffffff;
+        background-color: #FF9686;
+        height: 3.5em;
+        border: none;
+        width: 100%;
+        font-size: 1.8em; }
+        .searchBar .searchBlock .searchBlockDivider .btnSearch:hover {
+          background-color: #ffc2b9; }
 
 .menu4 .blockMenu4 {
   display: inline-block;
-  width: 250px;
-  margin: 0px 10px; }
+  width: 24em;
+  margin: 0 1em; }
   .menu4 .blockMenu4 span {
-    font-size: 15px; }
+    font-size: 1.5em; }
 
 .menu3 .blockMenu3 {
   display: inline-block;
-  width: 350px;
-  margin: 0px 10px; }
+  width: 34em;
+  margin: 0 0.6em; }
   .menu3 .blockMenu3 span {
-    font-size: 15px; }
+    font-size: 1.5em; }
 
 .menu6 .blockMenu6 {
   display: inline-block;
-  width: 160px;
-  margin: 0px 10px; }
+  width: 15em;
+  margin: 0 1em; }
   .menu6 .blockMenu6 span {
-    font-size: 15px; }
+    font-size: 1.5em; }
 
 footer {
-  margin-top: 40px;
-  border-top: 1px solid #484848;
-  padding-top: 40px;
-  font-size: 13px; }
+  margin-top: 3em;
+  border-top: 0.1em solid #484848;
+  padding-top: 4em;
+  font-size: 1.3em; }
   footer .quartFooter {
     display: inline-block;
-    width: 200px;
-    margin: 0px 10px;
-    padding: 10px;
+    width: 16em;
+    margin: 0 1em;
+    padding: 1em;
     vertical-align: top; }
     footer .quartFooter .selectFooter {
-      height: 40px;
-      width: 150px;
+      height: 2em;
+      width: 10em;
       background: transparent;
-      font-size: 14px;
+      font-size: 1em;
       color: #00A699;
-      margin: 2px;
+      margin: 0.2em;
       font-weight: bold; }
     footer .quartFooter h6 {
       margin-top: 0;
       margin-bottom: 0;
-      font-size: 14px; }
+      font-size: 1em; }
     footer .quartFooter ul {
-      margin-top: 10px;
+      margin-top: 1em;
       padding-left: 0; }
     footer .quartFooter li {
       list-style: none;
       padding-left: 0; }
 
 .bottomFooter {
-  border-top: 1px solid #484848; }
+  border-top: 0.1em solid #484848;
+  margin-top: 3em;
+  padding-top: 1em; }
   .bottomFooter div {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 1.5em;
     line-height: 5em; }
   .bottomFooter .bottomFooterLeft {
     display: inline-block;
-    padding-bottom: 30px; }
+    padding-bottom: 3em; }
   .bottomFooter .bottomFooterRight {
     display: inline-block;
     float: right; }
@@ -163,5 +180,30 @@ footer {
     color: #484848; }
     .bottomFooter a:hover {
       color: #00A699; }
+
+.slider {
+  width: 350px;
+  height: 180px; }
+  .slider .slide-holder {
+    width: 1500px;
+    position: relative;
+    left: 0;
+    will-change: transform;
+    animation: scroller 10s infinite; }
+    .slider .slide-holder .slide {
+      width: 350px;
+      height: 180px;
+      float: left;
+      position: relative; }
+
+@keyframes scroller {
+  0% {
+    transform: translateX(0); }
+  33% {
+    transform: translateX(-350px); }
+  66% {
+    transform: translateX(-700px); }
+  100% {
+    transform: translateX(0); } }
 
 /*# sourceMappingURL=output.css.map */

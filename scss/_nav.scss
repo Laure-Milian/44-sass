@@ -1,0 +1,58 @@
+.navDesktop {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	color: $grey;
+	background-color: $white;
+	opacity: 0.9;	
+
+	.navLeft {
+		display: inline-block;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.navRight {
+		display: inline-block;
+		float: right;
+		text-align: center; 
+
+		.navBlock {
+			display: inline-block;
+			width: 12em;
+			line-height: 3em;
+			height: 3em;
+			font-size: 1.5em;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.logo {
+		margin: 2px;
+	}
+}
+
+.navMobile {
+
+	.navBlock {
+		width: 100%;
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.navDesktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.navMobile {
+		display: none;
+	}
+}
